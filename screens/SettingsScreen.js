@@ -1,14 +1,15 @@
-import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
+import React from 'react'
+import { Text } from 'react-native'
+import { ExpoConfigView } from '@expo/samples'
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    title: 'Food Journal',
   };
 
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <ExpoConfigView />;
+    return (
+      <Text>THIS IS WHERE YOU LOG YOUR FOOD</Text>
+    )
   }
 }
