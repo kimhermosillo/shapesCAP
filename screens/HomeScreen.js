@@ -7,6 +7,8 @@ import {
   Text,
   TouchableOpacity,
   View,
+  TextInput,
+  AppRegistry,
 } from 'react-native'
 import { WebBrowser } from 'expo'
 
@@ -21,6 +23,10 @@ export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
+  constructor(props) {
+    super(props)
+    this.state = { text: '' }
+  }
 
   render() {
     return (
@@ -37,15 +43,12 @@ export default class HomeScreen extends React.Component {
             />
           </View>
 
-          <View style={styles.getStartedContainer}>
+          <View style={styles.mainCard}>
            
             <Text style={styles.user}> Welcome, User!</Text>
+            <Text style={styles.userText}>Log in below to access workouts, and food logs!</Text>
+            {/* Text input!!! */}
 
-            
-
-            <Text>
-              SHAPES APPPP 
-            </Text>
           </View>
 
           
@@ -60,6 +63,10 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   user: {
     fontWeight: 'bold',
+    fontSize: 35,
+  },
+  userText: {
+    marginTop: 10,
   },
   // BELOW IS SHAPES PLUS LOGO AT THE HOME SCREEN
   container: {
@@ -81,7 +88,7 @@ const styles = StyleSheet.create({
     marginTop: 3,
     marginLeft: -10,
   },
-  getStartedContainer: {
+  mainCard: {
     alignItems: 'center',
     marginHorizontal: 50,
   },
@@ -90,3 +97,8 @@ const styles = StyleSheet.create({
     marginTop: 25,
   },
 })
+
+
+// exporting default
+AppRegistry.registerComponent('username', () => HomeScreen)
+AppRegistry.registerComponent('AwesomeProject',() => UselessTextInputMultiline)

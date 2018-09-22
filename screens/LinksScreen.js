@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, StyleSheet, Text } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { ExpoLinksView } from '@expo/samples'
 
 export default class LinksScreen extends React.Component {
@@ -9,7 +9,9 @@ export default class LinksScreen extends React.Component {
 
   render() {
     return (
-      <Text> THESE ARE ALL THE WORKOUTS</Text>
+      <View style={styles.container}>
+        <Text> THESE ARE ALL THE WORKOUTS</Text>
+      </View>
     )
   }
 }
