@@ -1,6 +1,7 @@
 import React from 'react'
-import { Text, StyleSheet, View, AppRegistry, TextInput, ScrollView } from 'react-native'
+import { StyleSheet, View, AppRegistry, TextInput, ScrollView } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
+import { Container, Header, Content, Button, Text } from 'native-base'
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
@@ -31,6 +32,9 @@ export default class SettingsScreen extends React.Component {
           onChangeText={(text) => this.setState({text})}
           value={this.state.text}
           />
+          <Button block light>
+            <Text>Light</Text>
+          </Button>
           <Text style={styles.textJournal}>
             Past entries:
           </Text>
