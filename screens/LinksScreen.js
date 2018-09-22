@@ -9,9 +9,11 @@ export default class LinksScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text> THESE ARE ALL THE WORKOUTS</Text>
-      </View>
+      <ScrollView style={styles.container}>
+        <View style={styles.container}>
+          <Text> THESE ARE ALL THE WORKOUTS</Text>
+        </View>
+      </ScrollView>
     )
   }
 }

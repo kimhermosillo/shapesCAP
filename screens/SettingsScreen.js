@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, View, AppRegistry, TextInput } from 'react-native'
+import { Text, StyleSheet, View, AppRegistry, TextInput, ScrollView } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
 
 export default class SettingsScreen extends React.Component {
@@ -13,22 +13,29 @@ export default class SettingsScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text> Keeping track of your meals is important to be able to keep track of your calorie goals!
+      <ScrollView style={styles.container}>
+        <View style={styles.welcomeJournal}>
+          <Text> Keeping track of your meals is important to be able to keep track of your calorie goals!
           Make sure to remember serving size, calorie, carb, and protein goals for each meal.
-        </Text>
-        <Text style={styles.textJournal}>What did you eat today?</Text>
-        <TextInput style={
-          {height: 90, 
-            width: 290,
-            marginLeft: 40,
-            backgroundColor: 'white',
-            borderColor: 'black', 
-            borderWidth: 3}}
-        onChangeText={(text) => this.setState({text})}
-        value={this.state.text}
-        />
-      </View>
+          </Text>
+          <Text style={styles.textJournal}>What did you eat today?</Text>
+          <TextInput style={
+            {height: 90, 
+              width: 290,
+              marginTop: 10,
+              marginBottom: 20,
+              marginLeft: 30,
+              backgroundColor: 'white',
+              borderColor: 'black', 
+              borderWidth: 3}}
+          onChangeText={(text) => this.setState({text})}
+          value={this.state.text}
+          />
+          <Text style={styles.textJournal}>
+            Past entries:
+          </Text>
+        </View>
+      </ScrollView>
     )
   }
 }
@@ -44,6 +51,11 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     fontWeight: 'bold',
     textAlign: 'center',
+  },
+  welcomeJournal: {
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 10,
   },
 })
 
