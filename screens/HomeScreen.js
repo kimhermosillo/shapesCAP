@@ -51,9 +51,7 @@ export default class HomeScreen extends React.Component {
           
         </ScrollView>
 
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>we're all gonna die anyway</Text>
-        </View>
+       
       </View>
     )
   }
@@ -63,6 +61,7 @@ const styles = StyleSheet.create({
   user: {
     fontWeight: 'bold',
   },
+  // BELOW IS SHAPES PLUS LOGO AT THE HOME SCREEN
   container: {
     flex: 1,
     backgroundColor: '#aed137',
@@ -86,33 +85,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 50,
   },
-  tabBarInfoContainer: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'black',
-    ...Platform.select({
-      ios: {
-        shadowColor: 'black',
-        shadowOffset: { height: -3 },
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 20,
-      },
-    }),
-    alignItems: 'center',
-    backgroundColor: 'black',
-    paddingVertical: 20,
-  },
-  tabBarInfoText: {
-    fontSize: 20,
-    color: 'white',
-    textAlign: 'center',
-  },
+  // ABOVE IS SHAPES PLUS LOGO AT THE HOME SCREEN
   navigationFilename: {
-    marginTop: 5,
+    marginTop: 25,
   },
 })
