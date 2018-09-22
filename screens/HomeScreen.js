@@ -38,13 +38,12 @@ export default class HomeScreen extends React.Component {
           </View>
 
           <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
-            <Text style={styles.getStartedText}>Welcome, User!</Text>
+           
+            <Text style={styles.user}> Welcome, User!</Text>
 
             
 
-            <Text style={styles.getStartedText}>
+            <Text>
               SHAPES APPPP 
             </Text>
           </View>
@@ -58,31 +57,15 @@ export default class HomeScreen extends React.Component {
       </View>
     )
   }
-
-  _maybeRenderDevelopmentModeWarning() {
-    if (__DEV__) {
-      const learnMoreButton = (
-        <Text onPress={this._handleLearnMorePress} style={styles.helpLinkText}>
-          Learn more
-        </Text>
-      )
-
-      
-    }
-  }
 }
 
 const styles = StyleSheet.create({
+  user: {
+    fontWeight: 'bold',
+  },
   container: {
     flex: 1,
     backgroundColor: '#aed137',
-  },
-  developmentModeText: {
-    marginBottom: 20,
-    color: 'rgba(0,0,0,0.4)',
-    fontSize: 14,
-    lineHeight: 19,
-    textAlign: 'center',
   },
   contentContainer: {
     paddingTop: 30,
@@ -103,19 +86,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 50,
   },
-  homeScreenFilename: {
-    marginVertical: 7,
-  },
   tabBarInfoContainer: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
+    backgroundColor: 'black',
     ...Platform.select({
       ios: {
         shadowColor: 'black',
         shadowOffset: { height: -3 },
-        shadowOpacity: 0.1,
+        shadowOpacity: 0.5,
         shadowRadius: 3,
       },
       android: {
@@ -123,12 +104,12 @@ const styles = StyleSheet.create({
       },
     }),
     alignItems: 'center',
-    backgroundColor: '#fbfbfb',
+    backgroundColor: 'black',
     paddingVertical: 20,
   },
   tabBarInfoText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    fontSize: 20,
+    color: 'white',
     textAlign: 'center',
   },
   navigationFilename: {
