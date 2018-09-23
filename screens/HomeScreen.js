@@ -45,7 +45,7 @@ export default class HomeScreen extends React.Component {
 
           <View style={styles.mainCard}>
            
-            <Text style={styles.user}> Welcome, User!</Text>
+            <Text style={styles.user}>Get Started Below!</Text>
             <Text style={styles.userText}>Log in below to access workouts, and food logs!</Text>
             {/* Form Input!!! */}
             <Container style={styles.signIn}>
@@ -113,7 +113,8 @@ const styles = StyleSheet.create({
   // LOG IN DETAILS
   signIn: {
     width: 350,
-    height: 400,
+    height: 200,
+    backgroundColor: '#aed137',
   },
 })
 
