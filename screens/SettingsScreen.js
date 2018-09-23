@@ -23,15 +23,15 @@ export default class SettingsScreen extends React.Component {
           {/* DATE PICKER */}
           <Content>
             <DatePicker
-              defaultDate={new Date(2018, 4, 4)}
-              minimumDate={new Date(2018, 1, 1)}
+              defaultDate={new Date(2018, 9, 22)}
+              minimumDate={new Date(2018, 9, 22)}
               maximumDate={new Date(2018, 12, 31)}
               locale={'en'}
               timeZoneOffsetInMinutes={undefined}
               modalTransparent={false}
               placeHolderText="Select Date"
               textStyle={{ color: 'green '}}
-              placeHolderTextStyle={{ color: '#d3d3d3' }}
+              placeHolderTextStyle={{ color: 'black' }}
               onDateChange={ this.setDate }
             />
             <Text>

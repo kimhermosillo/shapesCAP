@@ -13,7 +13,7 @@ import {
 import { WebBrowser } from 'expo'
 
 import { MonoText } from '../components/StyledText'
-
+import { Container, Header, Content, Form, Item, Input, Label } from 'native-base'
 
 console.disableYellowBox = true
 
@@ -47,8 +47,22 @@ export default class HomeScreen extends React.Component {
            
             <Text style={styles.user}> Welcome, User!</Text>
             <Text style={styles.userText}>Log in below to access workouts, and food logs!</Text>
-            {/* Text input!!! */}
-
+            {/* Form Input!!! */}
+            <Container style={styles.signIn}>
+             
+              <Content>
+                <Form>
+                  <Item floatingLabel>
+                    <Label>Username</Label>
+                    <Input />
+                  </Item>
+                  <Item floatingLabel last>
+                    <Label>Password</Label>
+                    <Input />
+                  </Item>
+                </Form>
+              </Content>
+            </Container>
           </View>
 
           
@@ -95,6 +109,11 @@ const styles = StyleSheet.create({
   // ABOVE IS SHAPES PLUS LOGO AT THE HOME SCREEN
   navigationFilename: {
     marginTop: 25,
+  },
+  // LOG IN DETAILS
+  signIn: {
+    width: 350,
+    height: 400,
   },
 })
 
