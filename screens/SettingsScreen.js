@@ -2,63 +2,10 @@ import React from 'react'
 import { StyleSheet, View, AppRegistry, TextInput, ScrollView, Document } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
 import ReactDOM from 'react-dom'
+import Journal from './Journal'
+import Logged from './Logged'
 import { Container, Header, Content, Button, Text, DatePicker } from 'native-base'
 
-// BEGINNING 
-/*
-(function initializePage(){
-  document.querySelector('#application-text').addEventListener('keyup', updatePreview)
-  document.querySelector('#preview-toggle').addEventListener('click', togglePreview)
-  document.querySelector('#application-input').addEventListener('submit', submitApplication)
-  getListing().then(response => {
-    addListing(response)
-  })
-})()
-
-function addFoodJournal (data) {
-  const container = document.querySelector('#food-journal')
-  container.append(makeElement('h4', data.date))
-  container.append(makeElement('p', data.foodLog))
-}
-
-function makeElement(tag, text) {
-  let element = document.createElement(tag)
-  element.textContent = text
-  return element
-}
-
-function makeElement (tag, text){
-  let element = document.createElement(tag)
-  element.textContent = text
-  return element
-}
-
-function updatePreview() {
-  const preview = document.querySelector('#foodLog-preview')
-  const text = document.querySelector('#foodLog-text').value
-  preview.textContent = text
-}
-
-function togglePreview() {
-  const preview = document.querySelector('#foodLog-preview')
-  preview.classList.toggle('hidden')
-}
-
-function submitFoodLog(event) {
-  event.preventDefault()
-  event.target.reset()
-  document.querySelector('#foodLog-preview').textContent = ''
-  flashSuccessMessage('Your journal was submitted!')
-}
-
-function flashSuccessMessage(message){
-  document.querySelector('#message').textContent = message
-}
-
-
-// END OF CRUD
-
-*/
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
@@ -96,20 +43,23 @@ export default class SettingsScreen extends React.Component {
             </Text>
           </Content>
           {/* END OF DATE PICKER */}
+          {/* BEGIN CRUD */}
           <Text style={styles.textJournal}>What did you eat today?</Text>
-          <TextInput style={
-            {height: 90, 
-              width: 290,
-              marginTop: 10,
-              marginBottom: 20,
-              marginLeft: 30,
-              backgroundColor: 'white',
-              borderColor: 'black', 
-              borderWidth: 3}}
-          onChangeText={(text) => this.setState({text})}
-          value={this.state.text}
-          />
-          <Button block dark>
+          <form id="foodlog-input" onSubmit={ this.props.submitCallBack}>
+            <TextInput id='foodlog-text' onChange={this.props.textCallBack} style={
+              {height: 90, 
+                width: 290,
+                marginTop: 10,
+                marginBottom: 20,
+                marginLeft: 30,
+                backgroundColor: 'white',
+                borderColor: 'black', 
+                borderWidth: 3}}
+            onChangeText={(text) => this.setState({text})}
+            value={this.state.text}
+            />   
+          </form>
+          <Button block dark id='submit' type='submit' value='submit'>
             <Text>Submit journal</Text>
           </Button>
           <Text style={styles.textJournal}>
