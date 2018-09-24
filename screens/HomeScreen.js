@@ -13,7 +13,7 @@ import {
 import { WebBrowser } from 'expo'
 
 import { MonoText } from '../components/StyledText'
-import { Container, Header, Content, Form, Item, Input, Label } from 'native-base'
+import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base'
 
 console.disableYellowBox = true
 
@@ -62,6 +62,9 @@ export default class HomeScreen extends React.Component {
                   </Item>
                 </Form>
               </Content>
+              <Button block light>
+                <Text>Log in</Text>
+              </Button>
             </Container>
           </View>
 
