@@ -45,7 +45,7 @@ export default class HomeScreen extends React.Component {
 
           <View style={styles.mainCard}>
            
-            <Text style={styles.user}>Get Started Below!</Text>
+            <Text style={styles.user}>Get Started!</Text>
             <Text style={styles.userText}>Log in below to access workouts, and food logs!</Text>
             {/* Form Input!!! */}
             <Container style={styles.signIn}>

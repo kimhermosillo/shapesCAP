@@ -1,7 +1,64 @@
 import React from 'react'
-import { StyleSheet, View, AppRegistry, TextInput, ScrollView } from 'react-native'
+import { StyleSheet, View, AppRegistry, TextInput, ScrollView, Document } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
+import ReactDOM from 'react-dom'
 import { Container, Header, Content, Button, Text, DatePicker } from 'native-base'
+
+// BEGINNING 
+/*
+(function initializePage(){
+  document.querySelector('#application-text').addEventListener('keyup', updatePreview)
+  document.querySelector('#preview-toggle').addEventListener('click', togglePreview)
+  document.querySelector('#application-input').addEventListener('submit', submitApplication)
+  getListing().then(response => {
+    addListing(response)
+  })
+})()
+
+function addFoodJournal (data) {
+  const container = document.querySelector('#food-journal')
+  container.append(makeElement('h4', data.date))
+  container.append(makeElement('p', data.foodLog))
+}
+
+function makeElement(tag, text) {
+  let element = document.createElement(tag)
+  element.textContent = text
+  return element
+}
+
+function makeElement (tag, text){
+  let element = document.createElement(tag)
+  element.textContent = text
+  return element
+}
+
+function updatePreview() {
+  const preview = document.querySelector('#foodLog-preview')
+  const text = document.querySelector('#foodLog-text').value
+  preview.textContent = text
+}
+
+function togglePreview() {
+  const preview = document.querySelector('#foodLog-preview')
+  preview.classList.toggle('hidden')
+}
+
+function submitFoodLog(event) {
+  event.preventDefault()
+  event.target.reset()
+  document.querySelector('#foodLog-preview').textContent = ''
+  flashSuccessMessage('Your journal was submitted!')
+}
+
+function flashSuccessMessage(message){
+  document.querySelector('#message').textContent = message
+}
+
+
+// END OF CRUD
+
+*/
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
