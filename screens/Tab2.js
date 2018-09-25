@@ -12,12 +12,12 @@ export default class Tab2 extends React.Component {
           <Content padder>
             <Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Straight Deadlifts</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Keeping your legs straight, deadlift desired weight while keeping your back straight.
                   </Text>
                 </Body>
               </CardItem>
@@ -35,34 +35,34 @@ export default class Tab2 extends React.Component {
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Squats</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Work on your glutes! Squat down, keeping feet shoulder width apart.
                   </Text>
                 </Body>
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Lunges</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Lunge across the room and back with desired weight.                  
                   </Text>
                 </Body>
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Hamstring Curls</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Laying on a bench, add weights to your legs and curl up.
                   </Text>
                 </Body>
               </CardItem>

@@ -12,57 +12,57 @@ export default class Tab1 extends React.Component {
           <Content padder>
             <Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Wall Balls</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Wall balls are amazing for shoulders! Grab any size weighted ball (whatevers comfortable but somewhat tough for you) then throw it up at all wall, then catch. Repeat for 20 times.
                   </Text>
                 </Body>
               </CardItem>
             </Card>
             <Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Incline Hammer Curls</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  On a seated incline bench with a dumbbell in each hand (at whatever weight is challenging for you) and allow them to hang straight down at your side. Initiate by flexing at the elbow, keeping your upper arm stationary. Continue this movement about 12-15 times.                  
                   </Text>
                 </Body>
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Kettle Raises - Arm</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Working each arm seperately, a kettlebell at your choice of weight. Squating down, the kettlebell touching the floor, stand up, then raise the kettlebell to the sky. Repeat about 12-15 times.
                   </Text>
                 </Body>
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Incline Hammer Curls</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  On a seated incline bench with a dumbbell in each hand (at whatever weight is challenging for you) and allow them to hang straight down at your side. Initiate by flexing at the elbow, keeping your upper arm stationary. Continue this movement about 12-15 times.
                   </Text>
                 </Body>
               </CardItem>
             </Card><Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Dips</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  Dips workout your tricep area! On parallel bars, jump up, straighten your arms and then lower your body by bending your elbows while leaning forward. This may take time to properly dip down until your shoulders are parallel with your elbows. Lift your body back up, that`s a dip! Repeat 12-15 times.
                   </Text>
                 </Body>
               </CardItem>
