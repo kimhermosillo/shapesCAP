@@ -45,7 +45,7 @@ export default class SettingsScreen extends React.Component {
           {/* END OF DATE PICKER */}
           {/* BEGIN CRUD */}
           <Text style={styles.textJournal}>What did you eat today?</Text>
-          <form id="foodlog-input" onSubmit={ this.props.submitCallBack}>
+          <form id="foodlog-input" onSubmit={ submitCallBack.this.props}>
             <TextInput id='foodlog-text' onChange={this.props.textCallBack} style={
               {height: 90, 
                 width: 290,
