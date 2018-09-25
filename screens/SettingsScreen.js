@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { StyleSheet, View, AppRegistry, TextInput, ScrollView, Document } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
 import ReactDOM from 'react-dom'
@@ -16,9 +16,13 @@ export default class SettingsScreen extends React.Component {
     this.state = { text: ' What did you eat today? ' }
   }
 
+  logFood() {
+    console.log(this.state.text)
+  }
+
   render() {
     console.log(this.state.text)
-    
+  
     return (
       <ScrollView style={styles.container}>
         <View style={styles.welcomeJournal}>
@@ -29,13 +33,14 @@ export default class SettingsScreen extends React.Component {
           <Content>
             <DatePicker
               defaultDate={new Date(2018, 9, 22)}
-              minimumDate={new Date(2018, 9, 22)}
+              minimumDate={new Date(2018, 1, 1)}
               maximumDate={new Date(2018, 12, 31)}
               locale={'en'}
               timeZoneOffsetInMinutes={undefined}
               modalTransparent={false}
               placeHolderText="Select Date"
               textStyle={{ color: 'green '}}
+             
               placeHolderTextStyle={{ color: 'black' }}
               onDateChange={ this.setDate }
             />
@@ -57,18 +62,26 @@ export default class SettingsScreen extends React.Component {
           onChangeText={(text) => this.setState({text})}
           value={this.state.text}
           />
-          <Button block dark>
+          {/* logJournal() { */}
+          {/* console.log(this.state.text) */}
+          {/* } */}
+
+          <Button block dark onPress={() => this.logFood()}>
             <Text>Submit journal</Text>
           </Button>
           <Text style={styles.textJournal}>
-            Past entries:
-            {this.state.text}
+            Past entries: 
+            <Text style={styles.welcomeJournal}>
+              {this.state.logFood}
+            
+            </Text>
           </Text>
         </View>
       </ScrollView>
     )
   }
 }
+
 
 
 
