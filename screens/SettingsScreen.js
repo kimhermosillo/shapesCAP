@@ -2,9 +2,8 @@ import React from 'react'
 import { StyleSheet, View, AppRegistry, TextInput, ScrollView, Document } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
 import ReactDOM from 'react-dom'
-import Journal from './Journal'
-import Logged from './Logged'
 import { Container, Header, Content, Button, Text, DatePicker } from 'native-base'
+
 
 
 export default class SettingsScreen extends React.Component {
@@ -14,10 +13,12 @@ export default class SettingsScreen extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = { text: ' Log your food here ' }
+    this.state = { text: ' What did you eat today? ' }
   }
 
   render() {
+    console.log(this.state.text)
+    
     return (
       <ScrollView style={styles.container}>
         <View style={styles.welcomeJournal}>
@@ -43,33 +44,35 @@ export default class SettingsScreen extends React.Component {
             </Text>
           </Content>
           {/* END OF DATE PICKER */}
-          {/* BEGIN CRUD */}
           <Text style={styles.textJournal}>What did you eat today?</Text>
-          <form id="foodlog-input" onSubmit={ submitCallBack.this.props}>
-            <TextInput id='foodlog-text' onChange={this.props.textCallBack} style={
-              {height: 90, 
-                width: 290,
-                marginTop: 10,
-                marginBottom: 20,
-                marginLeft: 30,
-                backgroundColor: 'white',
-                borderColor: 'black', 
-                borderWidth: 3}}
-            onChangeText={(text) => this.setState({text})}
-            value={this.state.text}
-            />   
-          </form>
-          <Button block dark id='submit' type='submit' value='submit'>
+          <TextInput style={
+            {height: 90, 
+              width: 290,
+              marginTop: 10,
+              marginBottom: 20,
+              marginLeft: 30,
+              backgroundColor: 'white',
+              borderColor: 'black', 
+              borderWidth: 3}}
+          onChangeText={(text) => this.setState({text})}
+          value={this.state.text}
+          />
+          <Button block dark>
             <Text>Submit journal</Text>
           </Button>
           <Text style={styles.textJournal}>
             Past entries:
+            {this.state.text}
           </Text>
         </View>
       </ScrollView>
     )
   }
 }
+
+
+
+
 
 
 const styles = StyleSheet.create({
@@ -91,3 +94,4 @@ const styles = StyleSheet.create({
 })
 
 AppRegistry.registerComponent('SettingsScreen', () => foodLogJournal)
+
