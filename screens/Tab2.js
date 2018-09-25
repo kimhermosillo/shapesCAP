@@ -1,6 +1,6 @@
 import React from 'react'
-import { Text, StyleSheet, View, ScrollView } from 'react-native'
-import { H1, H2, H3 } from 'native-base'
+import { StyleSheet, View, ScrollView } from 'react-native'
+import {  Container, Header, Content, Card, CardItem, Body, Text } from 'native-base'
 
 
 export default class Tab2 extends React.Component {
@@ -8,10 +8,23 @@ export default class Tab2 extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-          <Text>
-            <H1>name: "Calf Raises" </H1>
-description: "Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.",
-          </Text>
+          <Container>
+          
+            <Content padder>
+              <Card>
+                <CardItem header bordered>
+                  <Text>Calf Raises</Text>
+                </CardItem>
+                <CardItem bordered>
+                  <Body>
+                    <Text>
+                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+            </Content>
+          </Container>
         </ScrollView>
       </View>
     )
