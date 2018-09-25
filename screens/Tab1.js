@@ -8,23 +8,67 @@ export default class Tab1 extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-          <Container>
         
-            <Content padder>
-              <Card>
-                <CardItem header bordered>
-                  <Text>Calf Raises</Text>
-                </CardItem>
-                <CardItem bordered>
-                  <Body>
-                    <Text>
+          <Content padder>
+            <Card>
+              <CardItem header bordered>
+                <Text>Calf Raises</Text>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>
                         Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
-                    </Text>
-                  </Body>
-                </CardItem>
-              </Card>
-            </Content>
-          </Container>
+                  </Text>
+                </Body>
+              </CardItem>
+            </Card>
+            <Card>
+              <CardItem header bordered>
+                <Text>Calf Raises</Text>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>
+                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  </Text>
+                </Body>
+              </CardItem>
+            </Card><Card>
+              <CardItem header bordered>
+                <Text>Calf Raises</Text>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>
+                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  </Text>
+                </Body>
+              </CardItem>
+            </Card><Card>
+              <CardItem header bordered>
+                <Text>Calf Raises</Text>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>
+                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  </Text>
+                </Body>
+              </CardItem>
+            </Card><Card>
+              <CardItem header bordered>
+                <Text>Calf Raises</Text>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>
+                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                  </Text>
+                </Body>
+              </CardItem>
+            </Card>
+          </Content>
+
         </ScrollView>
       </View>
     )
@@ -33,8 +77,8 @@ export default class Tab1 extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
+
+
     backgroundColor: '#aed137',
   },
   textJournal: {

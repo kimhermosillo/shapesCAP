@@ -19,7 +19,6 @@ export default class LinksScreen extends React.Component {
     return (
   
       <Container>
-        <Header hasTabs />
         <Tabs renderTabBar={() => <ScrollableTab />}>
           <Tab heading = 'Upper Body'>
             <Tab1 />
