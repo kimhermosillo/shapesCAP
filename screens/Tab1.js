@@ -1,11 +1,31 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, StyleSheet, View } from 'react-native'
 
 
 export default class Tab1 extends React.Component {
   render() {
     return (
-      <Text>Hi</Text>
+      <View style={styles.container}>
+        <Text>Hi</Text>
+      </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 15,
+    backgroundColor: '#aed137',
+  },
+  textJournal: {
+    letterSpacing: 2,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  welcomeJournal: {
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 10,
+  },
+})
