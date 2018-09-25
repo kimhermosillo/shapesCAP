@@ -72,7 +72,7 @@ export default class SettingsScreen extends React.Component {
           <Text style={styles.textJournal}>
             Past entries: 
             <Text style={styles.welcomeJournal}>
-              {this.state.logFood}
+              {this.state.text}
             
             </Text>
           </Text>
