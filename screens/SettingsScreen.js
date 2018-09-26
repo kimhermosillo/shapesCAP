@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, AppRegistry, TextInput, ScrollView, Document } from 'react-native'
+import { StyleSheet, View, AppRegistry, ScrollView, Document } from 'react-native'
 import { ExpoConfigView } from '@expo/samples'
 import ReactDOM from 'react-dom'
-import { Container, Header, Content, Button, Text, DatePicker } from 'native-base'
+import { Container, Header, Content, Button, Text, DatePicker, Input, Item } from 'native-base'
 
 
 
@@ -37,7 +37,7 @@ export default class SettingsScreen extends React.Component {
               maximumDate={new Date(2018, 12, 31)}
               locale={'en'}
               timeZoneOffsetInMinutes={undefined}
-              modalTransparent={false}
+              modalTransparent={true}
               placeHolderText="Select Date"
               textStyle={{ color: 'green '}}
              
@@ -50,22 +50,10 @@ export default class SettingsScreen extends React.Component {
           </Content>
           {/* END OF DATE PICKER */}
           <Text style={styles.textJournal}>What did you eat today?</Text>
-          <TextInput style={
-            {height: 90, 
-              width: 290,
-              marginTop: 10,
-              marginBottom: 20,
-              marginLeft: 30,
-              backgroundColor: 'white',
-              borderColor: 'black', 
-              borderWidth: 3}}
-          onChangeText={(text) => this.setState({text})}
-          value={this.state.text}
-          />
-          {/* logJournal() { */}
-          {/* console.log(this.state.text) */}
-          {/* } */}
-
+          <Item regular>
+            <Input placeholder='Log your food here' onChangeText={(text) => this.setState({text})}  />
+          </Item>
+          
           <Button block dark onPress={() => this.logFood()}>
             <Text>Submit journal</Text>
           </Button>
