@@ -37,24 +37,24 @@ export default class Tab3 extends React.Component {
             </Card>
             <Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Planking</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                        Start off in push up position, lowering down to your elbows, keeping your back straight, engaging your core muscles for 1 minute.
                   </Text>
                 </Body>
               </CardItem>
             </Card>
             <Card>
               <CardItem header bordered>
-                <Text>Calf Raises</Text>
+                <Text>Bicycle</Text>
               </CardItem>
               <CardItem bordered>
                 <Body>
                   <Text>
-                        Stand on a flat ground, and go on your tippy toes. You could add weights if you`d like.
+                        Lay on back, lift legs and peddle for 30 seconds.
                   </Text>
                 </Body>
               </CardItem>
