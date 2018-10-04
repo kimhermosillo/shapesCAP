@@ -2,7 +2,7 @@
 
 # Deployed Links:
 Backend (API) -
-
+https://shapesserver.herokuapp.com/workouts
 
 
 # Problem 
@@ -13,3 +13,6 @@ What do my eating habits say about me?
 
 
 # Instructions
+Clone Repo
+Change directories into the screens folder
+Enter npm install
